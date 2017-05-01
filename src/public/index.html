@@ -1,0 +1,179 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<meta name="keywords" content="キーワード,キーワード">
+	<meta name="description" content="概要">
+	<title>tablesetting</title>
+
+	<!--  favicons -->
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/common/favicons/favicon.ico">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="/common/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/common/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/common/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/common/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/common/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/common/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/common/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/common/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/common/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/common/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/common/favicons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="/common/favicons/favicon-48x48.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/common/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/common/favicons/favicon-160x160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/common/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/common/favicons/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/common/favicons/favicon-32x32.png">
+	<link rel="manifest" href="/common/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#2d88ef">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<!-- /favicons -->
+
+	<!-- ogp -->
+	<meta property="og:title" content="//タイトル">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="//概要">
+	<meta property="og:url" content="//url">
+	<meta property="og:image" content="//image">
+	<meta property="og:site_name" content="//サイトの名前">
+	<!-- /ogp -->
+
+	<!-- twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="//twitterアカウント(@--)">
+	<meta name="twitter:creator" content="//製作者@--">
+	<meta name="twitter:title" content="//タイトル">
+	<meta name="twitter:description" content="//概要">
+	<meta name="twitter:image:src" content="//image">
+	<!-- /twitter -->
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<!-- header -->
+		<header class="header">
+			<h1 class="header__logo"></h1>
+			<nav class="header__nav">
+				<ul>
+					<li><a href=""></a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- /header -->
+
+		<!-- content -->
+		<article class="content">
+
+			<div class="hero">
+				<ul id="heroSlider" class="hero__ul">
+					<li class="hero__li"></li>
+				</ul>
+			</div>
+
+			<!-- demo: 上下文字のline-height切りデモ -->
+			<div class="demo-text-util">
+				<code class="code-description">
+					.u--inecut-cut:  上下の文字を切るけど、line-height は適用
+				</code>
+				<div class="demo-text-util__japanese_block">
+					<h3 class="demo-text-util__title">日本語</h3>
+					<p class="demo-text-util__paragraph u--linecut">
+						大森さんの意味かごまだ答弁に出来ん学校その至私か見当をというご病気ないたなだろが、その今も私か理科権力を解らで、岡田さんののが先の私にとにかく小発展としからあなた会を肝意味でするようにもしお返事にするりでて、きっとけっして話をするうばいだ事を死んないなけれ
+					</p>
+				</div>
+
+				<div class="demo-text-util__english_block">
+					<h3 class="demo-text-util__title">英語</h3>
+					<p class="demo-text-util__paragraph u--linecut">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+
+			<!--
+			lost-utility demo: float colを自動的に clear fix させる
+			@NOTE Android 4.3 以下は対応ができないので注意
+			-->
+			<div class="demo-col-util">
+				<code class="code-description">
+					lost-utility: グリッドレイアウト関連 (container: 800pxの場合、子 div に 1/2、1/4)
+				</code>
+				<div class="demo-col-util__container">
+					<div class="demo-col-util__image demo-col-util__image--col2">
+						<a href="http://placehold.it">
+							<img src="http://placehold.it/400x200/522A64/FFFFFF">
+						</a>
+					</div>
+					<div
+						class="
+						demo-col-util__text
+						demo-col-util__text--background-mud
+						demo-col-util__text--col2">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+
+				<div class="demo-col-util__container">
+					<div class="demo-col-util__image demo-col-util__image--col4">
+						<a href="http://placehold.it">
+							<img src="http://placehold.it/200x200/FF0065/FFFFFF">
+						</a>
+					</div>
+					<div
+						class="
+						demo-col-util__text
+						demo-col-util__text--background-green
+						demo-col-util__text--col4 ">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+					<div class="demo-col-util__image demo-col-util__image--col4">
+						<a href="http://placehold.it">
+							<img src="http://placehold.it/200x200/00A3B2/FFFFFF">
+						</a>
+					</div>
+					<div
+						class="
+						demo-col-util__text
+						demo-col-util__text--background-yellow
+						demo-col-util__text--col4 ">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!--
+			include-media demo: media query ツール
+			https://github.com/eduardoboucas/include-media
+			-->
+			<div class="demo-incude-media">
+				<code class="code-description">
+					include-media: デスクトップ : 緑、タブレット : 青、モバイル : 赤
+				</code>
+				<div class="demo-incude-media__container">
+					<div class="demo-incude-media--contents">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- /content -->
+
+		<!-- footer -->
+		<footer class="footer">
+
+		</footer>
+		<!-- /	footer -->
+	</div>
+</body>
+</html>

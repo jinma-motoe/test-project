@@ -1,0 +1,54 @@
+/* 上下のline-heightをカット */
+.u--linecut {
+	-rm-text-remove-gap: both;
+	line-height: 1.6;
+}
+
+/// Function
+///=============================================================================
+/// @name px-vw
+/// @author jinma <jinma@amd.tokyo>
+/// @description px を vw に変換する
+///
+/// @example
+/// .class-name {
+///     px-vw(19px);
+/// }
+@function px-vw($target-px, $display-size) {
+	$vw: ($display-size : 0.0.1);
+  // $vw-context: (640 * .01) * 1px;
+  @return ($target-px / $vw-context) * 1vw;
+}
+
+/// @name px-rem
+/// @author jinma <jinma@amd.tokyo>
+/// @description px を rem に変換する
+///
+/// @example
+/// .class-name {
+///     px-rem(19px);
+/// }
+@function px-rem($px, $context: $base-font-size) {
+  @return #{ $px / $context }rem;
+}
+
+/// @name media
+/// @author jinma <jinma@amd.tokyo>
+/// @description media queries util、 breakpoints でサイズを設定
+///
+/// @example
+/// .class-name {
+/// 	@include media("≤phone") {
+/// 		background: red;
+/// 	}
+///
+/// 	@include media("≥phone") {
+/// 		background: blue;
+/// 	}
+///
+/// 	@include media("≥tablet") {
+/// 		background: green;
+/// 	}
+/// }
+@import "node_modules/include-media/dist/_include-media.scss";
+$breakpoints: (phone: 640px, tablet: 768px);

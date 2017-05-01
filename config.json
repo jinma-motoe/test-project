@@ -1,0 +1,11 @@
+{
+	"PATH": {
+		"src": {
+			"modules": "src/module/**/*.js",
+			"styles": "src/sass/style.scss",
+			"img": "src/public/img/**/*.*",
+			"html": "src/public/index.html"
+		},
+		"dist": "dist"
+	}
+}

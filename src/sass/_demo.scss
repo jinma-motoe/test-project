@@ -1,0 +1,117 @@
+// demo
+//==============================================================================
+.code-description {
+  font-family: $font-yugo;
+  display: block;
+  background: deepskyblue;
+  margin-bottom: 20px;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+// .demo-text-util
+// [line-cut util] を再現する為
+//==============================================================================
+.demo-text-util {
+  background: lightgrey;
+  padding: 20px;
+
+  &__title {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    color: #333;
+    border: 1px solid cyan;
+    font-size: 1.3rem;
+  }
+
+  &__japanese_block {
+    padding: 10px;
+    border: 1px solid darkgrey;
+    background: white;
+    margin-bottom: 20px;
+    font-family: $font-yugo;
+  }
+
+  &__english_block {
+    padding: 10px;
+    border: 1px solid darkgrey;
+    background: white;
+    font-family: Helvetica, Arial;
+  }
+}
+
+// .demo-col-util
+// [lost-utility] を再現する為 (http://lostgrid.org/)
+//==============================================================================
+.demo-col-util {
+  background: lightgrey;
+  padding: 20px;
+
+  &__container {
+    background: white;
+    lost-utility: clearfix;
+    lost-center: 800px;
+
+  }
+  &__image {
+    img { max-width: 100%; }
+    &--col2 {
+      lost-column: 1/2 0 0;
+    }
+    &--col4 {
+      lost-column: 1/4 0 0;
+    }
+  }
+  &__text {
+    padding: 10px;
+    color: white;
+    &--col2 {
+      lost-column: 1/2 0 0;
+    }
+    &--col4 {
+      lost-column: 1/4 0 0;
+    }
+    &--background-yellow {
+      background-color: #fbe562;
+    }
+    &--background-green {
+      background-color: #a3db05;
+    }
+    &--background-mud {
+      background-color: #766f63;
+    }
+  }
+}
+
+// .demo-incude-media
+// [media] を再現する為
+// desktop : 緑
+// table : 青
+// phone : 赤
+//==============================================================================
+.demo-incude-media {
+  background: lightgrey;
+  padding: 20px;
+  &__container {
+    @include media("≤phone") {
+      background: red;
+    }
+
+    @include media("≥phone") {
+      background: blue;
+    }
+
+    @include media("≥tablet") {
+      background: green;
+    }
+  }
+
+  &--contents {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,53 @@
+@import "reset";
+
+// variables
+$font-yugo: 游ゴシック体, 'Yu Gothic', Meiryo, メイリオ, YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+$font-hira: Meiryo, メイリオ, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+$font-mincho: 'ヒラギノ明朝 Pro W6', 'Hiragino Mincho Pro', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+/* メイリオが頭じゃないとIE11でline-heightが効かない*/
+
+//color
+$white: #fff;
+$black: #000;
+$red: #ff0000;
+$gray: #555;
+$palegray: #eee;
+$darkgray: #333;
+
+
+//default　
+* {
+	box-sizing: border-box;
+	line-height: 1.6;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-overflow-scrolling : touch;
+	-webkit-text-size-adjust: 100%;
+	overflow-y: scroll;
+	// font-family: $font-yugo;
+
+}
+
+img {
+	line-height: 0;
+}
+
+main {
+	display: block;
+}
+
+i, em, strong {
+	font-weight: normal;
+	font-style: normal;
+}
+
+mark {
+	background-color: $red;
+}
+
+.container {
+
+}
